@@ -46,21 +46,29 @@ const About = () => {
 	return (
 		<>
 			<motion.div variants={textVariant()}>
-				<p className="sectionSubText">Introduction</p>
-				<h2 className="styles.sectionHeadText">Overview.</h2>
+				{/* <p className="sectionSubText">Introduction</p> */}
+				<h2 className="styles.sectionHeadText">About Me.</h2>
 			</motion.div>
 
 			<motion.p
 				variants={fadeIn("", "", 0.1, 1)}
 				className="mt-4 text-secondary text-[17px] max-w-[3xl] leading-[30px]"
 			>
-				Dynamic Full-Stack Developer with a passion for crafting innovative web
-				applications. Proven expertise in React, Next.js, Node.js, and Python.
-				Skilled in UI/UX design and DevOps (Docker). Proven ability to deliver high-quality,
-				scalable solutions, as demonstrated by a strong portfolio of full-stack
-				Next.js projects and modern UI/UX designs. Eager to leverage my
-				technical prowess and problem-solving abilities to contribute to
-				cutting-edge projects and drive innovation.
+				I am a passionate Software Developer with 3+ years of experience specializing in the MERN stack and modern web technologies. Skilled in JavaScript, TypeScript, React, Next.js, Node.js, NestJS, and AWS, I build scalable, user-focused applications with robust architecture and seamless performance.
+
+My expertise spans backend API development, authentication (JWT), cloud integration (AWS S3, Lambda, API Gateway), and real-time communication (Socket.IO). I also have experience with payment gateways (Stripe, Switch, Nets), Firebase Realtime DB, and report automation using tools like Puppeteer and OpenAPI.
+
+Key Highlights:
+
+Delivered FCRF | Diamond Reports, implementing dynamic reports (Diamond, Rarity, Argyle) with sharing, saving, and downloading features using React.js, NestJS, Puppeteer, and Google Sheets.
+
+Built full-stack solutions including a multi-tenant healthcare platform, a matrimonial app with Next.js & Gemini API, and real-time chat applications.
+
+Integrated advanced tools like Sentry.io for real-time error tracking and optimized performance in high-traffic applications.
+
+Hands-on experience with version control, Agile (JIRA), and multi-environment deployments (Dev/Prod).
+
+With 250+ LeetCode solutions, I am passionate about problem-solving and continuously improving my skills. My goal is to craft innovative, high-performance applications that deliver real business value.
 			</motion.p>
 			<div className="mt-20 flex flex-wrap gap-10">
 				{services.map((service, index) => (

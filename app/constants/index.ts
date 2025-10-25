@@ -1,129 +1,85 @@
-export const navLinks = [
-	{
-		id: "about",
-		title: "About",
-	},
-	{
-		id: "work",
-		title: "Work",
-	},
-	{
-		id: "contact",
-		title: "Contact",
-	},
+const navLinks = [
+	{ id: "about", title: "About" },
+	{ id: "work", title: "Work" },
+	{ id: "projects", title: "Projects" },
+	{ id: "contact", title: "Contact" },
 ];
 
 const services = [
 	{
-		title: "UI/UX Designer",
-		icon: "/backend.webp",
-	},
-	{
-		title: "Full Stack Web Developer",
+		title: "Full Stack Developer (MERN)",
 		icon: "/web.webp",
 	},
 	{
-		title: "App Developer",
+		title: "Backend Engineer (Node.js / NestJS)",
+		icon: "/backend.webp",
+	},
+	{
+		title: "Frontend Developer (React / Next.js)",
 		icon: "/mobile.webp",
 	},
 	{
-		title: "Software Engineer",
+		title: "Cloud Integration Engineer (AWS / GCP)",
 		icon: "/creator.webp",
 	},
 ];
 
 const technologies = [
-	{
-		name: "HTML 5",
-		icon: "/tech/html.webp",
-	},
-	{
-		name: "CSS 3",
-		icon: "/tech/css.webp",
-	},
-	{
-		name: "JavaScript",
-		icon: "/tech/javascript.webp",
-	},
-	{
-		name: "TypeScript",
-		icon: "/tech/typescript.webp",
-	},
-	{
-		name: "React JS",
-		icon: "/tech/reactjs.webp",
-	},
-	{
-		name: "Next.JS",
-		icon: "/tech/nextjs.svg",
-	},
-	{
-		name: "Redux Toolkit",
-		icon: "/tech/redux.webp",
-	},
-	{
-		name: "Tailwind CSS",
-		icon: "/tech/tailwind.webp",
-	},
-	{
-		name: "Three JS",
-		icon: "/tech/threejs.webp",
-	},
-	{
-		name: "git",
-		icon: "/tech/git.webp",
-	},
-	{
-		name: "figma",
-		icon: "/tech/figma.webp",
-	},
-	{
-		name: "wordpress",
-		icon: "/tech/wordpress.webp",
-	},
-	{
-		name: "bootstrap",
-		icon: "/tech/bootstrap.webp",
-	},
+	{ name: "JavaScript (ES6+)", icon: "/tech/javascript.webp" },
+	{ name: "TypeScript", icon: "/tech/typescript.webp" },
+	{ name: "React.js", icon: "/tech/reactjs.webp" },
+	{ name: "PostgreSQL", icon: "/tech/postgresql.png" },
+	{ name: "AWS", icon: "/tech/aws.png" },
+	{ name: "Google Cloud", icon: "/tech/gcp.png" },
+	{ name: "Docker", icon: "/tech/docker.png" },
+	{ name: "Redux Toolkit", icon: "/tech/redux.png" },
+	// { name: "Tailwind CSS", icon: "/tech/tailwind.webp" },
+	{ name: "Git", icon: "/tech/git.webp" },
+	{ name: "Prisma", icon: "/tech/prisma.png" },
+	{ name: "Sequelize", icon: "/tech/sequelize.png" },
+	{ name: "Sentry", icon: "/tech/sentry.jpeg" },
+	// { name: "Swagger", icon: "/tech/swagger.jpeg" },
+	// { name: "Bootstrap", icon: "/tech/bootstrap.webp" },
+	// { name: "NestJS", icon: "/tech/nestjs.png" },
+	// { name: "Express.js", icon: "/tech/express.png" },
+	// { name: "MongoDB", icon: "/tech/mongodb.png" },
 ];
 
 const experiences = [
 	{
-		title: "Wordpress Developer & UI/UX Designer",
-		company_name: "A.V.M Auto",
-		icon: "/company/avm.webp",
-		iconBg: "#383E56",
-		date: "2020 -  2023",
-		points: [
-			"Self-Taught Expertise: Gained proficiency in WordPress and UI/UX design through independent learning.",
-			"Collaborative Design: Worked closely with stakeholders to gather feedback and iterate on the portfolio website's interactivity.",
-			"Successful Website Development: Designed and developed a visually appealing and user-friendly portfolio website using WordPress.",
-			"Positive Business Impact: Contributed to +54.25% sales and overall business growth through the improved website."
-		],
-	},
-	{
-		title: "Next.JS Developer",
-		company_name: "Sparkbright Engineering",
-		icon: "/company/sparkbright.webp",
-		iconBg: "#E6DEDD",
-		date: "2023 - 2024",
-		points: [
-			"Self-Taught Expertise: Gained proficiency in React.JS and Next.JS through independent learning.",
-			"Successful Website Development: Designed and developed a visually appealing and user-friendly portfolio website using Next.JS.",
-			"Collaborative Design: Worked closely with stakeholders to gather feedback and iterate on the portfolio website's interactivity."
-		],
-	},
-	{
 		title: "Software Developer",
-		company_name: "Way to Web Pvt. Ltd.",
-		icon: "/company/wtw.jpg",
-		iconBg: "#E6DEDD",
-		date: "2024 - Present",
+		company_name: "Websultanate Software Technologies Pvt. Ltd.",
+		icon: "/company/websultanate.jpeg",
+		iconBg: "#383E56",
+		date: "Apr 2024 - Present",
 		points: [
-			"Developing and maintaining Wordpress Site for A.V.M Auto The Car Body Shop based in Ahmedabad, Gujarat India.",
-			"Analyzing feedbacks and fixing bugs.",
-			"Search Engine Optimization.",
-			"Design Maintainence and hosting maintenance.",
+			"Contributing as a MERN Stack Developer to build scalable, high-performance web applications.",
+			"Implementing backend APIs and optimizing full-stack performance for enterprise-grade clients.",
+			"Collaborating with cross-functional teams to deliver robust, maintainable, and tested solutions.",
+		],
+	},
+	{
+		title: "MERN Stack Developer",
+		company_name: "Androcoders",
+		icon: "/company/androcoders.png",
+		iconBg: "#E6DEDD",
+		date: "Oct 2022 - Apr 2024",
+		points: [
+			"Developed multiple full-stack web applications using MongoDB, Express, React, and Node.js.",
+			"Worked with AWS services (S3, Lambda, API Gateway) and implemented scalable APIs.",
+			"Collaborated with designers and QA teams to deliver seamless UX across platforms.",
+		],
+	},
+	{
+		title: "Backend Developer Intern",
+		company_name: "Rablo.in",
+		icon: "/company/rablo.png",
+		iconBg: "#E6DEDD",
+		date: "Jun 2022 - Sep 2022",
+		points: [
+			"Built and optimized RESTful APIs using Node.js and MongoDB.",
+			"Improved data-fetching efficiency and backend response times by 30%.",
+			"Collaborated remotely with senior developers and contributed to production deployments.",
 		],
 	},
 ];
@@ -132,195 +88,100 @@ const testimonials = [
 	{
 		id: 1,
 		testimonial:
-			"Behance is a social media platform owned by Adobe whose main focus is to showcase and discover creative work.",
-		name: "Om Patel",
-		image: "/socialmedia/behance.svg",
-		link: "https://www.behance.net/omthecreator",
+			"Shane is a proactive and detail-oriented engineer. His ability to design reliable backend architectures and integrate complex APIs is impressive.",
+		name: "Team Lead, Websultanate Technologies",
+		image: "/socialmedia/linkedin.svg",
+		link: "https://www.linkedin.com/in/shanealam/",
 	},
 	{
 		id: 2,
 		testimonial:
-			"LinkedIn is a business and employment-focused social media platform that works through websites and mobile apps.",
-		name: "Om Patel",
-		image: "/socialmedia/linkedin.svg",
-		link: "https://www.linkedin.com/in/om-patel-401068143/",
-	},
-	{
-		id: 3,
-		testimonial:
-			"Dribbble is a self-promotion and social networking platform for digital designers and creatives. It serves as a design portfolio.",
-		name: "Om Patel",
-		image: "/socialmedia/dribble.svg",
-		link: "https://dribbble.com/om2121",
-	},
-	{
-		id: 4,
-		testimonial:
-			"Also do check out my UI/UX Portfolio where I have shared by design studies.",
-		name: "Om Patel",
-		image: "/socialmedia/portfolio.svg",
-		link: "https://omthecreator.netlify.app/",
-	},
-	{
-		id: 5,
-		testimonial:
-			"Also do check out my Github Profile where I have shared all my codes from basic to advanced.",
-		name: "Om Patel",
+			"Delivered clean, scalable code and modern frontend experiences using React and Next.js with excellent communication throughout.",
+		name: "Client – Freelance Project",
 		image: "/tech/github.webp",
-		link: "https://github.com/omunite215",
+		link: "https://github.com/shane6123",
 	},
 ];
 
-
-const projects :{
-	name: string;
-	description: string;
-	tags: {
-		name: string;
-		color: string;
-	}[];
-	image: string;
-	source_code_link?: string;
-	deploy_link: string;
-	platform: "Netlify" | "Vercel" | "Figma" | "Wordpress" | "Web"
-}[] = [
+const projects = [
 	{
-		name: "A.V.M Auto Portfolio",
+		name: "FCRF – Diamond Reports Platform",
 		description:
-			"A Designed and developed a visually appealing and user-friendly portfolio website using WordPress.",
+			"A report generation platform for diamond analytics and certification using React, NestJS, Puppeteer, and Google Sheets integration with GIA APIs.",
 		tags: [
-			{
-				name: "wordpress",
-				color: "blue-text-gradient",
-			},
-			{
-				name: "google-translate",
-				color: "green-text-gradient",
-			},
+			{ name: "React.js", color: "blue-text-gradient" },
+			{ name: "NestJS", color: "green-text-gradient" },
+			{ name: "Google Sheets API", color: "pink-text-gradient" },
 		],
-		image: "/projectimg/avm.webp",
-		platform: "Wordpress",
-		deploy_link: "https://avmauto.in/",
-	},
-	{
-		name: "Sparkbright Engineering Portfolio",
-		description:
-			" Designed and developed a visually appealing and user-friendly portfolio website using Next.JS.",
-		tags: [
-			{
-				name: "next",
-				color: "red-text-gradient",
-			},
-			{
-				name: "Next UI",
-				color: "orange-text-gradient",
-			},
-			{
-				name: "tailwind",
-				color: "blue-text-gradient",
-			},
-		],
-		image: "/projectimg/sparkbright.png",
-		source_code_link: "https://github.com/omunite215/React-Admin-DashBoard",
+		image: "/projectimg/fcrf.png",
+		deploy_link: "https://www.fcresearch.org/",
 		platform: "Web",
-		deploy_link: "https://sparkbright.in/",
 	},
 	{
-		name: "HooBank",
+		name: "Nek Rishta – AI-based Matrimonial Platform",
 		description:
-			"A responsive Bank HomePage showcasing different features such as various payment gateways integration, easy money transfer, advanced security, etc. It has a beautiful interface made using Tailwind CSS and React",
+			"A modern matchmaking platform integrating Gemini AI for intelligent recommendations. Built with Next.js, Express, and PostgreSQL (Sequelize ORM).",
 		tags: [
-			{
-				name: "next",
-				color: "green-text-gradient",
-			},
-			{
-				name: "tailwind",
-				color: "blue-text-gradient",
-			},
+			{ name: "Next.js", color: "blue-text-gradient" },
+			{ name: "PostgreSQL", color: "green-text-gradient" },
+			{ name: "Gemini AI", color: "pink-text-gradient" },
 		],
-		image: "/projectimg/hoobank.webp",
-		source_code_link: "https://github.com/omunite215/hoobank",
-		platform: "Vercel",
-		deploy_link: "https://hoobankbyom.netlify.app/",
-	},
-	{
-		name: "MERN Dashboard",
-		description:
-			" Designed and developed a visually appealing and user-friendly Data Analytics Dashboard using MERN",
-		tags: [
-			{
-				name: "react",
-				color: "blue-text-gradient",
-			},
-			{
-				name: "materialui",
-				color: "orange-text-gradient",
-			},
-			{
-				name: "MongoDB",
-				color: "green-text-gradient",
-			},
-			{
-				name: "Express",
-				color: "pink-text-gradient",
-			},
-		],
-		image: "/projectimg/mern.png",
-		source_code_link: "https://github.com/omunite215/Project_MERN-Dashboard",
+		image: "/projectimg/nekrishta.png",
+		deploy_link: "http://nekrishta.com/",
 		platform: "Web",
-		deploy_link: "https://admin-frontend-r705.onrender.com/",
 	},
 	{
-		name: "Metaverse Web 3.0",
+		name: "R2R Care – Multi-Tenant Healthcare Platform",
 		description:
-			"A Modern UI/UX Landing Page using Framer Motion and TailwindCSS with a feel and looks of Web 3.0",
+			"Built a healthcare SaaS app with dynamic subdomain onboarding using AWS Amplify, Lambda, API Gateway, and DocumentDB for tenant isolation.",
 		tags: [
-			{
-				name: "react",
-				color: "blue-text-gradient",
-			},
-			{
-				name: "tailwind",
-				color: "green-text-gradient",
-			},
-			{
-				name: "framer-motion",
-				color: "orange-text-gradient",
-			},
+			{ name: "React.js", color: "blue-text-gradient" },
+			{ name: "AWS Lambda", color: "green-text-gradient" },
+			{ name: "DocumentDB", color: "pink-text-gradient" },
 		],
-		image: "/projectimg/metaverse.png",
-		source_code_link: "https://github.com/omunite215/Project_Metaverse",
-		platform: "Vercel",
-		deploy_link: "https://project-metaverse-beta.vercel.app/",
+		image: "/projectimg/r2rcare.png",
+		deploy_link: "https://demo.r2rcare.co.uk/",
+		platform: "Web",
 	},
-	{
-		name: "Issue Tracker",
+	// {
+	// 	name: "PVROOF.IO – Solar Installation Platform",
+	// 	description:
+	// 		"Integrated Stripe payments, AWS DynamoDB, SES, and EventBridge for handling secure UK-based transactions and automated reminders.",
+	// 	tags: [
+	// 		{ name: "Stripe", color: "blue-text-gradient" },
+	// 		{ name: "AWS DynamoDB", color: "green-text-gradient" },
+	// 		{ name: "AWS EventBridge", color: "pink-text-gradient" },
+	// 	],
+	// 	image: "/projectimg/pvroof.webp",
+	// 	deploy_link: "https://www.pvroof.io/",
+	// 	platform: "Web",
+	// },
+		{
+		name: "Azown – Real Estate Platform",
 		description:
-			"A Next.JS Full Stack Issue Tracker made using Next.Js, ShadCN UI, Prisma, mySQL with latest features like Next.JS Server Components, and Serverless features.",
+			"A comprehensive real estate platform offering property listings, virtual tours, and agent services with integrated payment solutions using Stripe and AWS services.",
 		tags: [
-			{
-				name: "next",
-				color: "blue-text-gradient",
-			},
-			{
-				name: "tailwind",
-				color: "green-text-gradient",
-			},
-			{
-				name: "shadCN",
-				color: "orange-text-gradient",
-			},
-			{
-				name: "mySQL",
-				color: "green-text-gradient",
-			},
+			{ name: "Stripe", color: "blue-text-gradient" },
+			{ name: "AWS DynamoDB", color: "green-text-gradient" },
+			{ name: "AWS EventBridge", color: "pink-text-gradient" },
 		],
-		image: "/projectimg/issuetracker.png",
-		source_code_link: "https://github.com/omunite215/Project_Issue-Tracker",
-		platform: "Vercel",
-		deploy_link: "https://project-issue-tracker.vercel.app/",
+		image: "/projectimg/azown.png",
+		deploy_link: "https://www.azown.com/",
+		platform: "Web",
+	},
+		{
+		name: "Yohesha – Banking & Financial Services App",
+		description:
+			"A comprehensive financial services platform offering banking, insurance, and investment solutions with real-time chat support using Socket.IO and Firebase Realtime Database.",
+		tags: [
+			{ name: "Stripe", color: "blue-text-gradient" },
+			{ name: "AWS DynamoDB", color: "green-text-gradient" },
+			{ name: "AWS EventBridge", color: "pink-text-gradient" },
+		],
+		image: "/projectimg/yohesha.png",
+		deploy_link: "https://www.yohesha.com/",
+		platform: "Web",
 	},
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export {navLinks, services, technologies, experiences, testimonials, projects };
