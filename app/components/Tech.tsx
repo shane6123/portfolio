@@ -5,7 +5,7 @@ import { BallCanvas } from "./canvas";
 import { useInView } from "react-intersection-observer";
 import { useState, useEffect } from "react";
 
-const LazyBall = ({ technology }) => {
+const LazyBall = ({ technology  } : { technology: any }) => {
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
