@@ -19,7 +19,7 @@ type ProjectCardProps = {
 	image: string;
 	source_code_link?: string;
 	deploy_link: string;
-	platform: "Netlify" | "Vercel" | "Figma" | "Wordpress" | "Web"
+	platform: "Netlify" | "Vercel" | "Figma" | "Wordpress" | "Web" | string;
 };
 
 const ProjectCard = ({
@@ -123,10 +123,19 @@ const Works = () => {
 			</div>
 
 			<div className="mt-20 flex flex-wrap gap-7">
-				{projects.map((project, index) => (
-					<ProjectCard key={`project-${index}`} index={index} {...project} />
-				))}
-			</div>
+  {projects.map((project, index) => (
+    <ProjectCard 
+      key={`project-${index}`} 
+      index={index} 
+      name={project.name}
+      description={project.description}
+      tags={project.tags}
+      image={project.image}
+      deploy_link={project.deploy_link}
+      platform={project.platform}
+    />
+  ))}
+</div>
 		</>
 	);
 };
