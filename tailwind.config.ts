@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-import  { fontFamily } from "tailwindcss/defaultTheme";
+import defaultTheme from "tailwindcss/defaultTheme";
 
 const config: Config = {
 	content: [
@@ -10,7 +10,7 @@ const config: Config = {
 	theme: {
 		extend: {
 			fontFamily: {
-				sans: ["var(--font-sans)", ...fontFamily.sans],
+				sans: ["var(--font-sans)", ...defaultTheme.fontFamily.sans],
 			},
 			colors: {
 				primary: "#050816",
