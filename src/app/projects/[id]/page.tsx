@@ -34,7 +34,14 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
         <div className="w-full h-64 md:h-96 bg-slate-800 rounded-xl overflow-hidden mb-12 border border-slate-700 relative group">
            {/* Placeholder for actual image */}
            <div className="absolute inset-0 bg-slate-900 flex items-center justify-center text-slate-500">
-             <span className="text-lg">Project Screenshot: {project.image}</span>
+             {/* <span className="text-lg">Project Screenshot: {project.image}</span> */}
+             <motion.img 
+               src={project.image} 
+               alt={project.name} 
+               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+               initial={{ scale: 1 }}
+               whileHover={{ scale: 1.05 }}
+             />
            </div>
            <a 
              href={project.link} 

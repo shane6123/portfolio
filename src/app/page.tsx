@@ -220,15 +220,22 @@ export default function Home() {
         <h2 className="text-3xl font-bold text-white mb-12 flex items-center gap-4">
           <span className="text-cyan-400 font-mono">04.</span> Selected Projects
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {projects.map((project) => (
             <Link href={`/projects/${project.id}`} key={project.id} className="group cursor-pointer perspective-1000">
               <div className="bg-slate-900 rounded-xl overflow-hidden border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 h-full flex flex-col hover:shadow-2xl hover:shadow-black/50 hover:-translate-y-2">
-                <div className="h-56 bg-slate-800 relative overflow-hidden">
+                <div className="h-44 bg-slate-800 relative overflow-hidden">
                   <div className="absolute inset-0 bg-slate-900/20 group-hover:bg-transparent transition duration-500 z-10" />
                   <div className="w-full h-full flex flex-col items-center justify-center text-slate-600 bg-slate-800 group-hover:scale-105 transition-transform duration-500">
                      <Layout size={48} className="mb-2 opacity-50" />
-                     <span className="font-mono text-xs uppercase tracking-widest opacity-70">View Case Study</span>
+                     {/* <span className="font-mono text-xs uppercase tracking-widest opacity-70">View Case Study</span> */}
+                     <motion.img
+                        src={project.image}
+                        alt={project.name}
+                        className="w-full h-full object-cover"
+                        initial={{ scale: 1 }}
+                        whileHover={{ scale: 1.05 }}
+                     />
                   </div>
                 </div>
                 
