@@ -215,58 +215,79 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 5. PROJECTS SECTION (04) */}
-      <section className="py-20 px-6 max-w-6xl mx-auto" id="projects">
-        <h2 className="text-3xl font-bold text-white mb-12 flex items-center gap-4">
-          <span className="text-cyan-400 font-mono">04.</span> Selected Projects
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {projects.map((project) => (
-            <Link href={`/projects/${project.id}`} key={project.id} className="group cursor-pointer perspective-1000">
-              <div className="bg-slate-900 rounded-xl overflow-hidden border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 h-full flex flex-col hover:shadow-2xl hover:shadow-black/50 hover:-translate-y-2">
-                <div className="h-44 bg-slate-800 relative overflow-hidden">
-                  <div className="absolute inset-0 bg-slate-900/20 group-hover:bg-transparent transition duration-500 z-10" />
-                  <div className="w-full h-full flex flex-col items-center justify-center text-slate-600 bg-slate-800 group-hover:scale-105 transition-transform duration-500">
-                     <Layout size={48} className="mb-2 opacity-50" />
-                     {/* <span className="font-mono text-xs uppercase tracking-widest opacity-70">View Case Study</span> */}
-                     <motion.img
-                        src={project.image}
-                        alt={project.name}
-                        className="w-full h-full object-cover"
-                        initial={{ scale: 1 }}
-                        whileHover={{ scale: 1.05 }}
-                     />
-                  </div>
-                </div>
-                
-                <div className="p-8 flex flex-col flex-grow bg-slate-900">
-                  <div className="flex justify-between items-start mb-4">
-                    <h3 className="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">
-                      {project.name}
-                    </h3>
-                    <ExternalLink size={20} className="text-slate-500 group-hover:text-cyan-400 transition-colors" />
-                  </div>
-                  
-                  <p className="text-slate-400 mb-8 line-clamp-3 leading-relaxed">
-                    {project.short_desc}
-                  </p>
-                  
-                  <div className="mt-auto">
-                    <div className="flex flex-wrap gap-2 mb-6">
-                      {project.tags.slice(0,3).map(t => (
-                        <span key={t} className="px-2.5 py-1 text-xs font-medium rounded bg-cyan-950 text-cyan-300 border border-cyan-900/30 font-mono">{t}</span>
-                      ))}
-                    </div>
-                    <span className="text-sm text-cyan-500 font-bold flex items-center gap-2 group-hover:gap-3 transition-all">
-                      Read Case Study <ArrowLeft className="rotate-180" size={16} />
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </Link>
-          ))}
+     {/* 5. PROJECTS SECTION (04) */}
+<section className="py-20 px-6 max-w-6xl mx-auto" id="projects">
+  <h2 className="text-3xl font-bold text-white mb-12 flex items-center gap-4">
+    <span className="text-cyan-400 font-mono">04.</span> Selected Projects
+  </h2>
+
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+    {projects.map((project) => (
+      <Link
+        href={`/projects/${project.id}`}
+        key={project.id}
+        className="group perspective-1000"
+      >
+        <div className="bg-slate-900 rounded-xl overflow-hidden border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 h-full flex flex-col hover:-translate-y-2 hover:shadow-2xl hover:shadow-cyan-500/10">
+          
+          {/* Image */}
+          <div className="h-44 relative overflow-hidden bg-slate-800">
+            <motion.img
+              src={project.img}
+              alt={project.name}
+              className="w-full h-full object-cover"
+              initial={{ scale: 1 }}
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.4 }}
+            />
+            <div className="absolute inset-0 bg-slate-900/30 group-hover:bg-slate-900/10 transition" />
+          </div>
+
+          {/* Content */}
+          <div className="p-6 flex flex-col flex-grow">
+            <div className="flex justify-between items-start mb-3">
+              <h3 className="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors">
+                {project.name}
+              </h3>
+              <ExternalLink
+                size={18}
+                className="text-slate-500 group-hover:text-cyan-400 transition-colors"
+              />
+            </div>
+
+            <p className="text-slate-400 text-sm leading-relaxed line-clamp-3 mb-6">
+              {project.short_desc}
+            </p>
+
+            {/* Tech Preview */}
+            <div className="flex flex-wrap gap-2 mb-6">
+              {project.tech
+                .split(",")
+                .slice(0, 4)
+                .map((tech) => (
+                  <span
+                    key={tech}
+                    className="px-2.5 py-1 text-xs font-medium rounded bg-slate-950 text-cyan-300 border border-slate-800"
+                  >
+                    {tech.trim()}
+                  </span>
+                ))}
+            </div>
+
+            {/* CTA */}
+            <div className="mt-auto">
+              <span className="text-sm text-cyan-500 font-semibold flex items-center gap-2 group-hover:gap-3 transition-all">
+                View Case Study
+                <ArrowLeft className="rotate-180" size={16} />
+              </span>
+            </div>
+          </div>
         </div>
-      </section>
+      </Link>
+    ))}
+  </div>
+</section>
+
 
       {/* 6. EDUCATION SECTION (05) */}
       <section className="py-20 px-6 max-w-4xl mx-auto" id="education">
